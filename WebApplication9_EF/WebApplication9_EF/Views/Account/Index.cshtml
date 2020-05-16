@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Account</h3>
+    <a asp-controller="account" asp-action="add">Add</a>
+    <a asp-controller="account" asp-action="login">Login</a>
+    <a asp-controller="invoice" asp-action="add">Add invoice</a>
+    <form  method="get" asp-controller="account" asp-action="search">
+        Keyword <input type="text"  name="keyword" value="@ViewBag.keyword"/>
+        <input type="submit" value="Search" />
+    </form>
+
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Username</td>
+            <td>Password</td>
+            <td>FullName</td>
+        </tr>
+        @foreach (var account in @ViewBag.accounts)
+        {
+    <tr>
+        <td>@account.Id</td>
+        <td>@account.Username</td>
+        <td>Password</td>
+        <td>@account.FullName</td>
+        <td>
+            <a asp-controller="account" asp-action="delete" asp-route-id="@account.Id">Delete</a>
+        </td>
+        <td>
+            <a asp-controller="account" asp-action="edit" asp-route-id="@account.Id">Edit</a>
+        </td>
+    </tr>
+        }
+    </table>
+</body>
+</html>

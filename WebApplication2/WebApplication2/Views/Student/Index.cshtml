@@ -1,0 +1,65 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student</title>
+</head>
+<body>
+    <h3>Student Info</h3>
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>@ViewBag.student.Id</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@ViewBag.student.Name</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>@ViewBag.student.Address</td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td>@ViewBag.student.Birthday.ToString("MM/dd/yyyy")</td>
+        </tr>
+
+    </table>
+
+    <h3>Faculty</h3>
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>@ViewBag.student.faculty.Id</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@ViewBag.student.faculty.Name</td>
+        </tr>
+    </table>
+
+    <h3>Course</h3>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        @foreach (var course in ViewBag.student.courses)
+        {
+            <tr>
+                <td>@course.Id</td>
+                <td>@course.Name</td>
+                <td>@course.Score</td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detail</title>
+</head>
+<body>
+    <h3>PRoduct info</h3>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>@ViewBag.product.Id</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@ViewBag.product.Name</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@ViewBag.product.Price</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>@ViewBag.product.Description</td>
+        </tr>
+    </table>
+
+    <a asp-controller="product" asp-action=""> products</a>
+</body>
+</html>

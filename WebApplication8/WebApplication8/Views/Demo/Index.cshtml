@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+@model WebApplication8.Models.Account
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <a asp-controller="demo" asp-action="display1"> View Session 1 </a>
+    <a asp-controller="demo" asp-action="display2"> View Session 2 </a>
+    <a asp-controller="demo" asp-action="login"> login </a>
+
+    <br /><br />
+    @ViewBag.error
+    <form method="post" asp-controller="demo">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" asp-for="Username" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" asp-for="Password" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login" asp-action="login" /></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

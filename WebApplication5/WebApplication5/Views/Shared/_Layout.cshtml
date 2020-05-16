@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <a asp-controller="home" asp-action="index">Home</a> |
+        <a asp-controller="about" asp-action="index">About us</a> |
+        <a asp-controller="news" asp-action="index">News</a> |
+        <br /><br />
+
+        <table border="1">
+            <tr>
+                <td width="200" valign="top">
+                    @await Component.InvokeAsync("Hello")
+                    <br />
+                    @await Component.InvokeAsync("Hi")
+                </td>
+                <td width="600" valign="top">
+                    @RenderBody()
+                </td>
+            </tr>
+        </table>
+
+        @await Component.InvokeAsync("Product")
+        <br /><br />
+        Copyright
+    </div>
+</body>
+</html>

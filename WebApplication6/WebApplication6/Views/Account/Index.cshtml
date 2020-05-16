@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model WebApplication6.Models.Account
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Register</h3>
+    luôn có thuộc tính multipart/form-data để upload file
+    <form asp-controller="account" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" asp-for="Username" />
+                </td>
+                <td>
+                    <span asp-validation-for="Username"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" asp-for="Password" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <select asp-for="Role">
+                        <option value="r1">Role 1</option>
+                        <option value="r2">Role 2</option>
+                        <option value="r3">Role 3</option>
+                        <option value="r4">Role 4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td>
+                    <br />namePhoto map tới controller<br />
+                    <input type="file" name="namePhoto" />
+                </td>
+            </tr>
+            <tr>
+                <td>Photos</td>
+                <td>
+                    <input type="file" name="namePhotos" multiple="multiple"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="save" asp-action="save" />
+                    <br />
+                    <a asp-controller="account" asp-action="login">Login</a>
+                </td>
+                <td>
+                    <input type="submit" value="Login" asp-action="login" />
+                </td>
+            </tr>
+
+        </table>
+        <input type="hidden" asp-for="Id" />
+    </form>
+</body>
+</html>

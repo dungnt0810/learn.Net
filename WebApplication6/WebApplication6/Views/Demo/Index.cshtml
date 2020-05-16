@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Search</h3>
+    <form method="post" asp-controller="demo" asp-action="search">
+        Keyword <input type="text" name="keyword" />
+        <input type="submit" value="Search" />
+    </form>
+
+    <h3>Search 2</h3>
+    <form method="post" asp-controller="demo" asp-action="search2">
+        Min <input type="text" name="min" />
+        Max <input type="text" name="max" />
+        <input type="submit" value="Search" />
+    </form>
+
+    lay ve mang quantity
+    
+    <h3>Cart</h3>
+    <form method="post" asp-controller="demo" asp-action="update">
+        Quantity 1 <input type="text" name="quantity" value="5" /><br />
+        Quantity 2 <input type="text" name="quantity" value="4" /><br />
+        Quantity 3 <input type="text" name="quantity" value="3" /><br />
+        Quantity 4 <input type="text" name="quantity" value="2" /><br />
+        Quantity 5 <input type="text" name="quantity" value="1" /><br />
+        <input type="submit" value="Update" />
+    </form>
+
+    
+</body>
+</html>

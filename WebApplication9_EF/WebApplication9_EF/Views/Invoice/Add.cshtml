@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+@model WebApplication9_EF.Models.Invoice
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <form  method="post" asp-controller="invoice" asp-action="add">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" asp-for="Name" />
+                </td>
+            </tr>
+            <tr>
+                <td>Payment</td>
+                <td>
+                    <input type="radio" asp-for="Payment" value="cash" />Cash
+                    <input type="radio" asp-for="Payment" value="paypal" />Paypal
+                    <input type="radio" asp-for="Payment" value="creditcard" />Credit card
+                </td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <input type="radio" asp-for="Status" value="new" />New
+                    <input type="radio" asp-for="Status" value="pending" />Pending
+                    <input type="radio" asp-for="Status" value="done" />Done
+                    <input type="radio" asp-for="Status" value="cancel" />Cancel
+                </td>
+            </tr>
+            <tr>
+                <td>Account</td>
+                <td>
+                    <select asp-for="AccountId">
+                        @foreach (var account in ViewBag.accounts)
+                        {
+                            <option ></option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    ádaasd
+    Age : @ViewBag.age
+    Status: @(ViewBag.status ? "Show" : "Hide")
+    Username : @ViewBag.username
+    Date : @ViewBag.date
+
+    <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>@ViewBag.product.id</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>@ViewBag.product.name</td>
+        </tr>
+        <tr>
+            <td>Created</td>
+            <td>@ViewBag.product.created.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>@ViewBag.product.price</td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td>@ViewBag.product.quantity</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>@(ViewBag.product.quantity * ViewBag.product.price)</td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><img src="~/image/@ViewBag.product.photo" alt="Alternate Text" width="100" height="100" /></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>Created</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Photo</th>
+        </tr>
+        @foreach (var product in ViewBag.products)
+        {
+            <tr>
+                <td>@product.id</td>
+                <td>@product.name</td>
+                <td>@product.created.ToString("dd/MM/yyyy")</td>
+                <td>@product.price</td>
+                <td>@product.quantity</td>
+                <td><img src="~/image/@product.photo" alt="Alternate Text" width="100" height="100" /></td>
+
+            </tr>
+        }
+        <tr>
+            <td colspan="6" align="right">Total</td>
+            <td>@ViewBag.total</td>
+        </tr>
+    </table>
+</body>
+</html>

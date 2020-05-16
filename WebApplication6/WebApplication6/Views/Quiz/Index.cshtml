@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Quiz</title>
+</head>
+<body>
+    <h3>Multiple choice</h3>
+    <form method="post" asp-controller="quiz" asp-action="submit">
+        <ol>
+            @foreach (var question in ViewBag.questions)
+            {
+                <li>
+                    @question.Content <br />
+                    <ol type="a">
+                        @foreach (var ans in question.Answers)
+                        {
+                            //nhom cac cau hoi theo question_ iD
+                            <li>
+                                <input type="radio" name="question_@question.Id" value="@ans.Id" />
+                                @ans.Content
+                            </li>
+                        }
+                    </ol>
+                </li>
+            }
+        </ol>
+        <br />
+        <input type="submit"  value="Submit" />
+    </form>
+    
+</body>
+</html>

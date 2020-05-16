@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Index</title>
+</head>
+<body>
+    <h1 class="format-text">Hello World  </h1>
+    @{
+        int age = 18;
+        string username = "asds";
+        var date = DateTime.Now;
+        double price = 4.5;
+        var quantity = 10;
+        var status = true;
+        List<string> names = new List<string>
+{
+            "name1 ",
+            "name 2",
+            "name 3",
+            "name 4",
+            "name 5",
+        };
+    }
+
+    Total : @(price * quantity) <br />
+    Status: @(status ? "Show" : "Hide") <br />
+    Age : @age <br />
+    username :@username <br />
+    date : @date.ToString("dd/MM/yy") <br />
+    <ul>
+        @foreach (var name in names)
+        {
+            <li>@name</li>
+        }
+    </ul>
+    @if (status)
+    {
+        <span>Hide</span>
+    }
+    else
+    {
+        <span>Show</span>
+    }
+
+    <img src="~/images/anime.jpg" alt="anime" onclick="clickme()"/>
+
+    <script src="~/js/mylib.js"></script>
+</body>
+</html>

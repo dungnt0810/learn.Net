@@ -1,0 +1,87 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model WebApplication7.Models.Book
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <form method="post" asp-controller="book" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Id</td>
+                <td>
+                    <input type="text" asp-for="Id" />
+                </td>
+                <td>
+                    <span asp-validation-for="Id"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" asp-for="Name" />
+                </td>
+                <td>
+                    <span asp-validation-for="Name"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Price</td>
+                <td>
+                    <input type="text" asp-for="Price" />
+                </td>
+                <td>
+                    <span asp-validation-for="Price"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ratting</td>
+                <td>
+                    <input type="text" asp-for="Rating" />
+                </td>
+                <td>
+                    <span asp-validation-for="Rating"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Page</td>
+                <td>
+                    <input type="text" asp-for="Page" />
+                </td>
+                <td>
+                    <span asp-validation-for="Page"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td>
+                    <input type="text" asp-for="Description" />
+                </td>
+                <td>
+                    <span asp-validation-for="Description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="save" asp-action="save" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <h3>Search with keyword</h3>
+    <form method="post" asp-controller="product" asp-action="searchwithkeyword">
+        Keyword <input type="text" name="keyword" value="@ViewBag.keyword" />
+        <input type="submit" value="Search" />
+    </form>
+
+    <h3>Search with Price</h3>
+    <form method="post" asp-controller="demo" asp-action="searchwithprice">
+        Min <input type="text" name="min" value="@ViewBag.min"/>
+        Max <input type="text" name="max" value="@ViewBag.max"/>
+        <input type="submit" value="Search" />
+    </form>
+
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+        @foreach (var product in ViewBag.products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

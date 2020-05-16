@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <h3>Index 2</h3>
+
+    Username : @Context.Session.GetString
+    Age: @Context.Session.GetString("Age").value
+</body>
+</html>
