@@ -28,6 +28,7 @@ namespace WebApplication_middleware
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSession();
 
             //khai bao middleware o day
             app.UseMiddleware<DateLogMiddleware>();
@@ -36,7 +37,7 @@ namespace WebApplication_middleware
 
             app.UseRouting();
 
-            app.UseSession();
+            
 
             app.UseEndpoints(endpoints =>
             {

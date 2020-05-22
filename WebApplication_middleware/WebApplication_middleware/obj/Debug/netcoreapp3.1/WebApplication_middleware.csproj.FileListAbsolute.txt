@@ -106,3 +106,5 @@ E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\n
 E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\Index.cshtml.g.cs
 E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Invoice\Index.cshtml.g.cs
 E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\netcoreapp3.1\WebApplication_middleware.csprojAssemblyReference.cache
+E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+E:\git\learn.Net\WebApplication_middleware\WebApplication_middleware\obj\Debug\netcoreapp3.1\Razor\Views\Login\Welcome.cshtml.g.cs
