@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+@model WebApplication_Authorization.Models.Account
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Login page</h3>
+
+    <h4 style="color: red">
+        @ViewBag.error
+    </h4>
+
+
+    <form method="post" asp-controller="login" asp-action="index">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" asp-for="Username" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" asp-for="Password" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Login"  /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

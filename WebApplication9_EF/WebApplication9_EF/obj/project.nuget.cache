@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s7MgGNt0SIq+oTtC9lQux7OOoW4+ZHU+UlqBirV31RZ5plbTqzZh+dVKRcNlgzMHoR+nKJE1WcbT9tDD1FTpfQ==",
+  "dgSpecHash": "HxxBkwnFIOU+jT058/xNtnBbqKuMgY3BbVqX8flxpNjJtxk+Z146rdIm4tergERI9Uu0GnNZ6QKvGt11qIprrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DungPC\\source\\repos\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
+  "projectFilePath": "E:\\git\\learn.Net\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DungPC\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\DungPC\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",

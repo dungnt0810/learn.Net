@@ -8515,11 +8515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DungPC\\source\\repos\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
+      "projectUniqueName": "E:\\git\\learn.Net\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
       "projectName": "WebApplication9_EF",
-      "projectPath": "C:\\Users\\DungPC\\source\\repos\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
+      "projectPath": "E:\\git\\learn.Net\\WebApplication9_EF\\WebApplication9_EF\\WebApplication9_EF.csproj",
       "packagesPath": "C:\\Users\\DungPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DungPC\\source\\repos\\WebApplication9_EF\\WebApplication9_EF\\obj\\",
+      "outputPath": "E:\\git\\learn.Net\\WebApplication9_EF\\WebApplication9_EF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DungPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
