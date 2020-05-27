@@ -21,11 +21,11 @@
             </tr>
             <tr>
                 <td>Date creattion</td>
-                <td><input type="date" asp-for="Datecreation" /></td>
+                <td><input type="date" asp-for="Datecreation" value="@DateTime.Now.ToString("yyyy-MM-dd")"/></td>
             </tr>
             <tr>
                 <td>Status</td>
-                <td><input type="radio" asp-for="Status" value="true" />Paid</td>
+                <td><input type="radio" asp-for="Status" value="true" checked/>Paid</td>
                 <td><input type="radio" asp-for="Status" value="false" />UnPaid</td>
             </tr>
 
@@ -47,7 +47,7 @@
                     <select asp-for="CustomerId">
                         @foreach (var customer in ViewBag.customers)
                         {
-                            <option value="@customer.Id">@customer.Name</option>
+                            <option value="@customer.Id">@customer.Id</option>
                         }
                     </select>
                 </td>

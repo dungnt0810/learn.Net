@@ -30,7 +30,7 @@
                 <td>@customer.Phone</td>
                 <td>
                     <a asp-controller="Orther" asp-action="index" >Add New Orther</a> |
-                    <a asp-controller="Orther" asp-action="index" >View Orther</a> |
+                    <a asp-controller="Orther" asp-action="ViewOrther" asp-route-customerId="@customer.Id">View Orther</a> |
                     <a asp-controller="Home" asp-action="index" >Change Profile</a>
                 </td>
                 

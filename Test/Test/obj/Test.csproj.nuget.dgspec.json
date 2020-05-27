@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DungPC\\source\\repos\\Test\\Test\\Test.csproj": {}
+    "E:\\git\\learn.Net\\Test\\Test\\Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DungPC\\source\\repos\\Test\\Test\\Test.csproj": {
+    "E:\\git\\learn.Net\\Test\\Test\\Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DungPC\\source\\repos\\Test\\Test\\Test.csproj",
+        "projectUniqueName": "E:\\git\\learn.Net\\Test\\Test\\Test.csproj",
         "projectName": "Test",
-        "projectPath": "C:\\Users\\DungPC\\source\\repos\\Test\\Test\\Test.csproj",
+        "projectPath": "E:\\git\\learn.Net\\Test\\Test\\Test.csproj",
         "packagesPath": "C:\\Users\\DungPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DungPC\\source\\repos\\Test\\Test\\obj\\",
+        "outputPath": "E:\\git\\learn.Net\\Test\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DungPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

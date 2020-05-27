@@ -43,5 +43,13 @@ namespace Test.Controllers
             db.SaveChanges();
             return RedirectToAction("Index", "Orther");
         }
+
+        [Route("vieworther")]
+        public IActionResult ViewOrther(int customerId)
+        {
+            ViewBag.customerId = customerId;
+            ViewBag.orthers = db.Customer.Find(customerId).Orther.ToList();
+            return View("ViewOrther");
+        }
     }
 }

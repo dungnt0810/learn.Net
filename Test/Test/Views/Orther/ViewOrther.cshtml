@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewOrther</title>
+</head>
+<body>
+    <h2>Orthers of @ViewBag.customerId </h2>
+
+    <table>
+        <tr>
+            <td>Orther Id</td>
+            <td>Name</td>
+            <td>Date Creatation</td>
+            <td>Status</td>
+            <td>Payments</td>
+            <td>Customer ID</td>
+            <td>Options</td>
+        </tr>
+        @foreach (var orther in @ViewBag.orthers)
+        {
+            <tr>
+                <td>@orther.Id</td>
+                <td>@orther.Name</td>
+                <td>@orther.Datecreation</td>
+                <td>@orther.Status</td>
+                <td>@orther.Payment</td>
+                <td>@orther.CustomerId</td>
+                <td>
+                    <a asp-controller="Orther" asp-action="delete">Delete</a>
+                </td>
+
+            </tr>
+        }
+    </table>
+</body>
+</html>
