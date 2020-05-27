@@ -7,7 +7,7 @@ namespace Test.Models
     {
         public Customer()
         {
-            Orther = new HashSet<Orther>();
+            Order = new HashSet<Order>();
         }
 
         public int Id { get; set; }
@@ -16,6 +16,6 @@ namespace Test.Models
         public DateTime Birthday { get; set; }
         public string Phone { get; set; }
 
-        public virtual ICollection<Orther> Orther { get; set; }
+        public virtual ICollection<Order> Order { get; set; }
     }
 }

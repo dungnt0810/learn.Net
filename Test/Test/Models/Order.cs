@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Test.Models
 {
-    public partial class Orther
+    public partial class Order
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewOrder</title>
+    
+</head>
+<body>
+    <h2>Orders of @ViewBag.customerId </h2>
+
+    <table>
+        <tr>
+            <td>Order Id</td>
+            <td>Name</td>
+            <td>Date Creatation</td>
+            <td>Status</td>
+            <td>Payments</td>
+            <td>Customer ID</td>
+            <td>Options</td>
+        </tr>
+        @foreach (var order in @ViewBag.orders)
+        {
+            <tr>
+                <td>@order.Id</td>
+                <td>@order.Name</td>
+                <td>@order.Datecreation</td>
+                <td>@order.Status</td>
+                <td>@order.Payment</td>
+                <td>@order.CustomerId</td>
+                <td>
+                    <a asp-controller="order" asp-action="delete" asp-route-id="@order.Id">Delete</a>
+                </td>
+            </tr>
+        }
+
+        <tr>
+            <td>
+                <a asp-controller="Order" asp-action="index">Add New Order</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -16,7 +16,7 @@ namespace Test.Models
         }
 
         public virtual DbSet<Customer> Customer { get; set; }
-        public virtual DbSet<Orther> Orther { get; set; }
+        public virtual DbSet<Order> Order { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -56,7 +56,7 @@ namespace Test.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Orther>(entity =>
+            modelBuilder.Entity<Order>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -81,7 +81,7 @@ namespace Test.Models
                 entity.Property(e => e.Status).HasColumnName("status");
 
                 entity.HasOne(d => d.Customer)
-                    .WithMany(p => p.Orther)
+                    .WithMany(p => p.Order)
                     .HasForeignKey(d => d.CustomerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Orther_Customer");

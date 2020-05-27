@@ -16,7 +16,7 @@ namespace Test.Controllers
         {
             db = _db;
         }
-        
+
         [Route("~/")]
         [Route("index")]
         [Route("")]

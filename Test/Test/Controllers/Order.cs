@@ -8,13 +8,13 @@ using Test.Models;
 
 namespace Test.Controllers
 {
-    
-    [Route("orther")]
-    public class OrtherController : Controller
+
+    [Route("order")]
+    public class orderController : Controller
     {
         private QuanLyHoaDonContext db;
 
-        public OrtherController(QuanLyHoaDonContext _db)
+        public orderController(QuanLyHoaDonContext _db)
         {
             db = _db;
         }
@@ -31,35 +31,35 @@ namespace Test.Controllers
         [Route("add")]
         public IActionResult Add()
         {
-            var orther = new Orther();
+            var order = new Order();
             return View("Index");
         }
 
         [HttpPost]
         [Route("add")]
-        public IActionResult Add(Orther orther)
+        public IActionResult Add(Order order)
         {
-            
-            db.Orther.Add(orther);
+
+            db.Order.Add(order);
             db.SaveChanges();
-            return RedirectToAction("Index", "Orther");
+            return RedirectToAction("Index", "order");
         }
 
-        [Route("vieworther")]
-        public IActionResult ViewOrther(int id)
+        [Route("vieworder")]
+        public IActionResult Vieworder(int id)
         {
             ViewBag.customerId = id;
-            ViewBag.orthers = db.Customer.Find(id).Orther.ToList();
-            return View("ViewOrther");
+            ViewBag.orders = db.Customer.Find(id).Order.ToList();
+            return View("Vieworder");
         }
 
         [Route("delete/{id}")]
         public IActionResult Delete(int id)
         {
-            int cusId = db.Orther.Find(id).CustomerId;
-            db.Orther.Remove(db.Orther.Find(id));
+            int cusId = db.Order.Find(id).CustomerId;
+            db.Order.Remove(db.Order.Find(id));
             db.SaveChanges();
-            return RedirectToAction("ViewOrther", new { id = cusId });
+            return RedirectToAction("Vieworder", new { id = cusId });
         }
     }
 }
