@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.Messaging;
 using Test.Models;
 
 namespace Test.Controllers
@@ -45,11 +46,20 @@ namespace Test.Controllers
         }
 
         [Route("vieworther")]
-        public IActionResult ViewOrther(int customerId)
+        public IActionResult ViewOrther(int id)
         {
-            ViewBag.customerId = customerId;
-            ViewBag.orthers = db.Customer.Find(customerId).Orther.ToList();
+            ViewBag.customerId = id;
+            ViewBag.orthers = db.Customer.Find(id).Orther.ToList();
             return View("ViewOrther");
+        }
+
+        [Route("delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            int cusId = db.Orther.Find(id).CustomerId;
+            db.Orther.Remove(db.Orther.Find(id));
+            db.SaveChanges();
+            return RedirectToAction("ViewOrther", new { id = cusId });
         }
     }
 }

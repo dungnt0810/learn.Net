@@ -9,6 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>ViewOrther</title>
+    
 </head>
 <body>
     <h2>Orthers of @ViewBag.customerId </h2>
@@ -33,11 +34,16 @@
                 <td>@orther.Payment</td>
                 <td>@orther.CustomerId</td>
                 <td>
-                    <a asp-controller="Orther" asp-action="delete">Delete</a>
+                    <a asp-controller="orther" asp-action="delete" asp-route-id="@orther.Id">Delete</a>
                 </td>
-
             </tr>
         }
+
+        <tr>
+            <td>
+                <a asp-controller="Orther" asp-action="index">Add New Orther</a>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
