@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Home</h2>
+
+    <table>
+        <tr>
+            <td>Customer Id</td>
+            <td>Name</td>
+            <td>Birthday</td>
+            <td>Phone</td>
+            <td>Options</td>
+        </tr>
+        @foreach (var customer in @ViewBag.customers)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.Name</td>
+                <td>@customer.Birthday</td>
+                <td>@customer.Phone</td>
+                <td>
+                    <a asp-controller="Orther" asp-action="index" >Add New Orther</a> |
+                    <a asp-controller="Orther" asp-action="index" >View Orther</a> |
+                    <a asp-controller="Home" asp-action="index" >Change Profile</a>
+                </td>
+                
+            </tr>
+        }
+    </table>
+</body>
+</html>

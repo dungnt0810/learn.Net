@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+@model Test.Models.Orther;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <h3>Add Orther</h3>
+    <form method="post" asp-controller="Orther" asp-action="add">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" asp-for="Name" /></td>
+            </tr>
+            <tr>
+                <td>Date creattion</td>
+                <td><input type="date" asp-for="Datecreation" /></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><input type="radio" asp-for="Status" value="true" />Paid</td>
+                <td><input type="radio" asp-for="Status" value="false" />UnPaid</td>
+            </tr>
+
+            <tr>
+                <td>Payments</td>
+                <td>
+                    <select asp-for="Payment">
+                        <option value="Crash">Crash</option>
+                        <option value="Visa Card">Visa card</option>
+                        <option value="Master Card">Master card</option>
+                        <option value="Paypal">Paypal</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Customer ID</td>
+                <td>
+                    <select asp-for="CustomerId">
+                        @foreach (var customer in ViewBag.customers)
+                        {
+                            <option value="@customer.Id">@customer.Name</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="save" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
