@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48A1Sns0oVr8uYlf25vK6HWV/iw8QO1offtyTkohfdCXVWzwvjj7hwzVrG8oJK8MXW5X1k1fGL94BHABDkaIbg==",
+  "dgSpecHash": "vn+myTPEVedK+w82/DD6W1xtJNurFrKt+6WGjfVy3GFOPJ/PDhVtm+V5qmSIa7NX+QIf08IBWFqYXni2KzYGTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+  "projectFilePath": "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DungPC\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\DungPC\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

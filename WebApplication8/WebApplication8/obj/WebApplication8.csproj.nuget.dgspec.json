@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj": {}
+    "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\WebApplication8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj": {
+    "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\WebApplication8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+        "projectUniqueName": "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
         "projectName": "WebApplication8",
-        "projectPath": "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
+        "projectPath": "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\WebApplication8.csproj",
         "packagesPath": "C:\\Users\\DungPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DungPC\\source\\repos\\WebApplication8\\WebApplication8\\obj\\",
+        "outputPath": "E:\\git\\learn.Net\\WebApplication8\\WebApplication8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DungPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
