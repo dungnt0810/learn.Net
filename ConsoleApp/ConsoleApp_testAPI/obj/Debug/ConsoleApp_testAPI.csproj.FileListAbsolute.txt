@@ -1,0 +1,12 @@
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\ConsoleApp_testAPI.exe.config
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\ConsoleApp_testAPI.exe
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\ConsoleApp_testAPI.pdb
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\obj\Debug\ConsoleApp_testAPI.csprojAssemblyReference.cache
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\obj\Debug\ConsoleApp_testAPI.csproj.CoreCompileInputs.cache
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\obj\Debug\ConsoleApp_testAPI.exe
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\obj\Debug\ConsoleApp_testAPI.pdb
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\System.Net.Http.Extensions.dll
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\System.Net.Http.Formatting.dll
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\System.Net.Http.Primitives.dll
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\bin\Debug\Newtonsoft.Json.dll
+E:\git\learn.Net\ConsoleApp\ConsoleApp_testAPI\obj\Debug\ConsoleApp_testAPI.csproj.CopyComplete
